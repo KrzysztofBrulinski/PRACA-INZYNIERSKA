@@ -9,8 +9,8 @@ public class MontgomeryLadder {
         BigInteger x1 = base;
         BigInteger x2 = base.multiply(base);
 
-        BigInteger tempX1 = BigInteger.valueOf(0);
-        BigInteger tempX2 = BigInteger.valueOf(0);
+        BigInteger tempX1;
+        BigInteger tempX2;
 
 
         String binaryExponent = exponent.toString(2);
@@ -19,16 +19,12 @@ public class MontgomeryLadder {
             if(binaryExponent.charAt(i) == '0'){
                 tempX1 = m.mod(x1.multiply(x1),mod);
                 tempX2 = m.mod(x1.multiply(x2),mod);
-                x1 = tempX1;
-                x2 = tempX2;
             }else{
                 tempX1 = m.mod(x1.multiply(x2),mod);
                 tempX2 = m.mod(x2.multiply(x2),mod);
-
-                x1 = tempX1;
-                x2 = tempX2;
             }
-
+            x1 = tempX1;
+            x2 = tempX2;
         }
 
         System.out.println(x1);

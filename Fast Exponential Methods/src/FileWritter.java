@@ -7,8 +7,8 @@ public class FileWritter {
 
         public static void write(String input, String name) {
             try {
-                FileWriter myWriter = new FileWriter("C:\\Users\\Krzysztof\\Desktop\\PRACA INZYNIERSKA\\"+ name +".txt");
-                myWriter.write("BEGIN: " + input + "END\n");
+                FileWriter myWriter = new FileWriter(".\\"+ name +".txt");
+                myWriter.write(input);
                 myWriter.close();
                 System.out.println("Successfully wrote to the file.");
             } catch (IOException e) {
@@ -16,5 +16,4 @@ public class FileWritter {
                 e.printStackTrace();
             }
         }
-
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Fast Exponential Methods.iml" filepath="$PROJECT_DIR$/Fast Exponential Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FastExponentialMethods.iml" filepath="$PROJECT_DIR$/FastExponentialMethods.iml" />
     </modules>
   </component>
 </project>
